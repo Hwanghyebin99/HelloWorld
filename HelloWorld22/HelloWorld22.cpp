@@ -4,9 +4,22 @@
 #include "pch.h"
 #include <iostream>
 
+class LetDebug
+{
+public:
+	void printNum()
+	{
+		short s1 = 32767;
+		short s2 = 1;
+		short s3 = (short)s1 + s2;
+		std::cout << s3 << std::endl;
+	}
+};
+
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	LetDebug *l = new LetDebug;
+	l->printNum();
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
